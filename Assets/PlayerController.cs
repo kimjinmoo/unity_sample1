@@ -22,6 +22,14 @@ public class PlayerController : MonoBehaviour
         {
             transform.Translate(3, 0, 0); // 오른쪽으로 3 움직인다.
         }
-        
+    }
+    public void LButtonDown()
+    {
+        transform.Translate(-3, 0, 0); // 왼쪽으로 3 움식인다.
+    }
+
+    public void RButtonDown()
+    {
+        transform.Translate(3, 0, 0); // 오른쪽으로 3 움직인다.
     }
 }
