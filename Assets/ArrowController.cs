@@ -16,28 +16,28 @@ public class ArrowController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // µî¼ÓÀ¸·Î ³«ÇÏ½ÃÅ²´Ù.
-        transform.Translate(0, -0.01f, 0);
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ï½ï¿½Å²ï¿½ï¿½.    
+        transform.Translate(0, -0.1f, 0);
         if(transform.position.y < -5.0f)
         {
             Destroy(gameObject);
         }
 
-        // È­»ìÀÇ Áß½ÉÁÂÇ¥
+        // È­ï¿½ï¿½ï¿½ï¿½ ï¿½ß½ï¿½ï¿½ï¿½Ç¥
         Vector2 p1 = transform.position;
-        // ÇÃ·¹ÀÌ¾îÀÇ Áß½É ÁÂÇ¥
+        // ï¿½Ã·ï¿½ï¿½Ì¾ï¿½ï¿½ï¿½ ï¿½ß½ï¿½ ï¿½ï¿½Ç¥
         Vector2 p2 = this.player.transform.position;
 
         Vector2 dir = p1 - p2;
         float d = dir.magnitude;
-        float r1 = 0.5f; // È­»ìÀÇ ¹Ý°æ
-        float r2 = 1.0f; // ÇÃ·¹ÀÌ¾îÀÇ ¹Ý°æ
+        float r1 = 0.5f; // È­ï¿½ï¿½ï¿½ï¿½ ï¿½Ý°ï¿½
+        float r2 = 1.0f; // ï¿½Ã·ï¿½ï¿½Ì¾ï¿½ï¿½ï¿½ ï¿½Ý°ï¿½
 
         if (d < r1 + r2)
         {
             GameObject director = GameObject.Find("GameDirector");
             director.GetComponent<GameDirector1>().DecreaseHp();
-            // Ãæµ¹ÇÑ °æ¿ì´Â È­»ìÀ» Áö¿î´Ù.
+            // ï¿½æµ¹ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ È­ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½.
             Destroy(gameObject);
         }
 
