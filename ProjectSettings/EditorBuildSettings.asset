@@ -8,7 +8,13 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
+  - enabled: 0
     path: Assets/GameScene.unity
     guid: 9080a8528a74a4f179e3ba8610c1ed48
+  - enabled: 1
+    path: Assets/game2/ClearScene.unity
+    guid: 42aa419df4761c44580ae5d6cf686931
+  - enabled: 1
+    path: Assets/game2/ClimbCloud.unity
+    guid: abea38eed36f84b00a1c54a07a73b004
   m_configObjects: {}
